@@ -19,14 +19,7 @@ namespace daemon_console
     /// </summary>
     class Program
     {
-        private static string s_clientId = "1d18b3b0-251b-4714-a02a-9956cec86c2d";
-        private static string s_clientIdForConfidentialApp = "16dab2ba-145d-4b1b-8569-bf4b9aed4dc8";
-        private static Uri s_ccaAuthority = new Uri("https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47");
-        private static string s_confidentialClientSecret = "";
-        private static readonly IEnumerable<string> s_scopes = new[] {
-             $"{s_clientId}/.default" };
-
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             try
             {
